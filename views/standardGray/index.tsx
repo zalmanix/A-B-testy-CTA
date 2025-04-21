@@ -1,30 +1,31 @@
 import StandardButton from "@/buttons/standardGray";
 import React from "react";
 import Image from "next/image";
+import styles from "./StandardGrayView.module.css"; // Assuming you use CSS Modules
 
 const StandardGrayView = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center gap-8 w-full">
-      <div className="w-full md:w-1/4">
+    <div className={styles.container}>
+      <div className={styles.imageWrapper}>
         <Image
           src="/images/laptop_mobile_bench_outdoors.jpg"
           alt="Placeholder"
           width={600}
           height={400}
-          // className="object-cover"
         />
       </div>
-      <div className="w-full md:w-3/4 flex flex-col ">
-        <h1 className="text-3xl font-bold pt-4 md:pt-0 pb-4">
-          Czym się zajmujemy
+      <div className={styles.textContent}>
+        <h1 className={styles.heading}>
+          Sprzęt komputerowy w atrakcyjnej cenie!
         </h1>
-        <p className="text-lg text-[#3D3D3D] pb-6">
-          FixIT to firma specjalizująca się w serwisie i sprzedaży sprzętu
-          komputerowego. Oferujemy kompleksowe usługi naprawy komputerów,
-          laptopów, a także akcesoriów elektronicznych, zapewniając wysoką
-          jakość i szybki czas realizacji.
+        <p className={styles.paragraph}>
+          Szukasz niezawodnego sprzętu komputerowego w atrakcyjnej cenie?
+          Sprawdź naszą ofertę - w FixIT znajdziesz szeroki wybór laptopów,
+          komputerów stacjonarnych i akcesoriów, które łączą jakość z przystępną
+          ceną. Nasi eksperci chętnie doradzą i pomogą dobrać idealne
+          rozwiązanie do Twoich potrzeb. Odwiedź nas i przekonaj się sam!
         </p>
-        <StandardButton className="text-[#3D3D3D] bg-[#E0E0E0] font-semibold text-sm rounded"/>
+        <StandardButton className={styles.button} />
       </div>
     </div>
   );
