@@ -65,13 +65,14 @@ export default function RootLayout({
           </div>
         </header>
 
-        {/* <Image
-          src="/images/baner.png"
-          alt="Banner"
-          width={500}
-          height={100}
-          className="w-full max-w-[1200px] m-auto"
-        /> */}
+        <Image
+  src="/images/banner.jpg"
+  alt="Banner"
+  width={1200}
+  height={300}
+  className="w-full h-auto object-cover container"
+/>
+
 
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start w-full pt-[25px] container mx-auto">
           {children}

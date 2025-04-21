@@ -18,7 +18,6 @@ const StandardButton = ({
       <button
         onClick={onClick}
         className={`${className}`}
-        style={{width: 144, height: 44}}
       >
         {label}
       </button>
