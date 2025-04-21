@@ -30,8 +30,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-[#3D3D3D] bg-[#e0e0e066]`}
       >
-        <header className="sticky top-0 z-50 bg-[#E0E0E0] shadow-md py-4">
-          <div className="flex items-center justify-between max-w-[1200px] mx-auto px-4">
+        <header className="sticky top-0 z-50 bg-[#E0E0E0] shadow-md ">
+          <div className="flex items-center justify-between mx-auto container py-4">
             <Image
               src="/images/logoBig.svg"
               alt="FixIT Logo"
@@ -56,12 +56,6 @@ export default function RootLayout({
                 Usługi
               </Link>
               <Link
-                href="/products"
-                className="text-lg font-semibold hover:underline"
-              >
-                Produkty
-              </Link>
-              <Link
                 href="/faq"
                 className="text-lg font-semibold hover:underline"
               >
@@ -79,12 +73,12 @@ export default function RootLayout({
           className="w-full max-w-[1200px] m-auto"
         /> */}
 
-        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start w-full max-w-[1200px] mx-auto">
+        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start w-full pt-[25px] container mx-auto">
           {children}
         </main>
 
-        <footer className="row-start-3 w-full bg-[#E0E0E0] mt-10 p-8">
-          <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8 md:gap-16">
+        <footer className="row-start-3 bg-[#E0E0E0] mt-10 ">
+          <div className="container py-8 mx-auto flex flex-col md:flex-row justify-between items-center gap-8 md:gap-16">
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
               <Image
                 src="/images/logoBig.svg"
