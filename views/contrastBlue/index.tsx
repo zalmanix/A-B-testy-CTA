@@ -1,10 +1,10 @@
 import StandardButton from "@/buttons/standardGray";
 import React from "react";
 import Image from "next/image";
-import styles from "./StandardGrayView.module.css";
+import styles from "./ContrastBlue.module.css";
 import HeaderWithBanner from "@/components/HeaderWithBanner";
 
-const StandardGrayView = ({ onCTA }: { onCTA: () => void }) => {
+const ContrastBlueView = ({ onCTA }: { onCTA: () => void }) => {
   return (
     <HeaderWithBanner>
       <div className={styles.container}>
@@ -28,11 +28,11 @@ const StandardGrayView = ({ onCTA }: { onCTA: () => void }) => {
             idealne rozwiązanie do Twoich potrzeb. Odwiedź nas i przekonaj się
             sam!
           </p>
-          <StandardButton className={styles.button} onClick={onCTA} />
+          <StandardButton onClick={onCTA} className={styles.button} />
         </div>
       </div>
     </HeaderWithBanner>
   );
 };
 
-export default StandardGrayView;
+export default ContrastBlueView;

@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+.imageWrapper {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .imageWrapper {
+    width: 25%;
+  }
+}
+
+.textContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .textContent {
+    width: 75%;
+  }
+}
+
+.heading {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    padding-top: 0;
+  }
+}
+
+.paragraph {
+  font-size: 1.125rem; /* text-lg */
+  color: #3D3D3D;
+  padding-bottom: 1.5rem;
+}
+
+.button {
+  background-color: #FFA726;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 0.375rem;
+  width: 100%;
+  height: 44px;
+  animation: pulse 700ms infinite;
+  transition: background-color 0.3s ease;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 167, 38, 0.6); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 167, 38, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 167, 38, 0); }
+}
+
+@media (min-width: 768px) {
+  .button {
+    width: 144px;
+  }
+}
+
+.button:hover {
+  background-color: #FB8C00;
+  cursor: pointer;
+}
+
